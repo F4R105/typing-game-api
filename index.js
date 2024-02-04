@@ -1,8 +1,10 @@
 require('dotenv').config()
+require('./db')
 const express = require('express')
 const app = express()
 const cors = require('cors')
 const { OAuth2Client } = require('google-auth-library')
+
 
 app.use(cors())
 app.use(express.json())
